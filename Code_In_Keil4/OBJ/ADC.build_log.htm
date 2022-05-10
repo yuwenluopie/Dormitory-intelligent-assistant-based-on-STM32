@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Yin dell, Yin, LIC=47GU5-G3BSD-9U34U-SYVAN-YUSXM-GK49K
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.21a
+Toolchain Path:  D:\MDK5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      UL2CM3.DLL V1.158.5.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+C:\Users\dell\Desktop\◊Ó÷’÷’\USER\pressure_sensor.uvprojx
+Project File Date:  11/11/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\MDK5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+..\HARDWARE\OLED\oled.h(68): warning:  #1295-D: Deprecated declaration Picture - give arg types
+  void Picture();
+..\HARDWARE\OLED\oled.h(69): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HARDWARE\OLED\oled.h(70): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HARDWARE\OLED\oled.h(75): warning:  #1295-D: Deprecated declaration IIC_Wait_Ack - give arg types
+  void IIC_Wait_Ack();
+..\HARDWARE\OLED\oled.h(77): warning:  #1-D: last line of file ends without a newline
+  	 
+main.c(61): warning:  #223-D: function "Adc_Init" declared implicitly
+  		Adc_Init();
+main.c(64): warning:  #223-D: function "NVIC_Configuration" declared implicitly
+  	NVIC_Configuration();
+main.c(65): warning:  #223-D: function "uart_init" declared implicitly
+  	uart_init(9600);
+main.c(69): warning:  #223-D: function "LCD_Init" declared implicitly
+  			LCD_Init();
+main.c(75): warning:  #223-D: function "DHT11_Init" declared implicitly
+  		while(DHT11_Init())	
+main.c(77): warning:  #223-D: function "LCD_ShowString" declared implicitly
+  		LCD_ShowString(60,130,"DHT11 Error");
+main.c(87): warning:  #223-D: function "DHT11_Read_Data" declared implicitly
+  			DHT11_Read_Data(&temperature,&humidity);
+main.c(97): warning:  #223-D: function "Get_Adc_Average" declared implicitly
+  	 adcx=Get_Adc_Average(ADC_Channel_1,10);//ADC????¡ø
+main.c(53): warning:  #550-D: variable "t" was set but never used
+    {	u8 t;
+main.c(58): warning:  #177-D: variable "peo" was declared but never referenced
+  		u8 peo;
+main.c(59): warning:  #177-D: variable "temp" was declared but never referenced
+  	float V,R,F,temp;
+main.c(124): warning:  #1-D: last line of file ends without a newline
+  	
+main.c: 17 warnings, 0 errors
+linking...
+Program Size: Code=35568 RO-data=8576 RW-data=956 ZI-data=1244  
+FromELF: creating hex file...
+"..\OBJ\ADC.axf" - 0 Error(s), 17 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\dell\Desktop\◊Ó÷’÷’\USER\RTE
+  D:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
