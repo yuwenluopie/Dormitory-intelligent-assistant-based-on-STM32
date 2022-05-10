@@ -1,0 +1,2 @@
+The project's ID is zmfabVLa2geBuZsy1wp-7FvwY8_t7JlD
+It uses ESP32 Dev Board (Wi-Fi)
